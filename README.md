@@ -42,13 +42,10 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 ```
 #### 💡 Gợi ý khi được hỏi:
 
-- Country Name: VN
-
-- State: HCM
-
-- Common Name (CN): localhost (rất quan trọng)
-
-- Các mục khác cứ điền đại cũng được
+> - Country Name: VN
+> - State: HCM
+> - Common Name (CN): localhost (rất quan trọng)
+> - Các mục khác cứ điền đại cũng được
 
 ### ⚙️ Bước 5: Cấu hình Apache để bật HTTPS
 ```
