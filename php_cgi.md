@@ -57,6 +57,29 @@ SELECT * FROM users;
 ```
 exit
 ```
+## Crack password
+
+## Test đăng nhập
+
+## Thăng 
+
+
+## Tạo thư mục
+```
+mkdir haidang
+```
+
+
+## xóa file
+```
+rm index.php
+```
+
+
+
+
+
+
 # 🛡️ 4. Đề xuất khắc phục
 
 ## Lọc Tham Số Nguy Hiểm
