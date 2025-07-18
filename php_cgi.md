@@ -70,22 +70,24 @@ exit
 ```
 ## Crack password
 
+- Xóa bộ nhớ đệm trước đó
+```
+rm ~/.john/john.pot
+```
+
 ```
 john --format=<format> hashes.txt
 ```
 
+- Crack hash
 ```
-john --show hashes.txt
-```
-
-```
-john --session=new_session --wordlist=/path/to/wordlist.txt hashes.txt
+john --wordlist=rockyou.txt --format=raw-md5 hash.txt
 ```
 
+- Show 
 ```
-john --wordlist=rockyou.txt --format=nt hashes.txt
+john --show --format=raw-md5 hash.txt
 ```
-
 
 
 ## Test đăng nhập
