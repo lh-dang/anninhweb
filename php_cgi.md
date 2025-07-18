@@ -175,6 +175,10 @@ sudo apt-get install libapache2-mod-php5
 ```
 
 ```
+sudo a2enmod php5
+```
+
+```
 sudo /etc/init.d/apache2 restart
 ```
 
