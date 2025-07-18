@@ -112,6 +112,13 @@ find / -perm -4000 -type f 2>/dev/null
 ```
 whoami
 ```
+
+> - Bạn là người thường (www-data), muốn vào phòng VIP.
+> - Có một người khác được cấp quyền root tên là nmap(/usr/bin/nmap)
+> - Khi bạn nhờ robot làm giúp ("--interactive")
+> - Bạn bảo: “Mở cửa phòng VIP giúp tôi nhé!” (!sh)
+> - Robot dùng quyền của nó để mở cửa, vậy là bạn vào được(chạy dưới quyền root)!
+
 ## Tạo thư mục
 ```
 mkdir haidang
