@@ -97,6 +97,15 @@ cat /etc/passwd
 
 ## Thăng Quyền
 
+| Thành phần    | Giải thích dễ hiểu                                                                                                                                            |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `find`        | Lệnh dùng để **tìm kiếm file/thư mục**.                                                                                                                       |
+| `/`           | Bắt đầu tìm từ **gốc hệ thống** (toàn bộ máy – từ `/` trở đi).                                                                                                |
+| `-perm -4000` | Tìm file có quyền **SUID (Set User ID)** được bật.<br>📌 "4000" là mã quyền dạng **octal** đại diện cho SUID.<br>✅ `-4000` nghĩa là **phải có đúng bit SUID** |
+| `-type f`     | Chỉ tìm **file thông thường** (không tìm thư mục, symlink, v.v).                                                                                              |
+| `2>/dev/null` | **Ẩn lỗi** (ví dụ lỗi "Permission denied" khi không đọc được thư mục nào đó).                                                                                 |
+
+
 ```
 find / -perm -4000 -type f 2>/dev/null
 ```
