@@ -59,6 +59,24 @@ exit
 ```
 ## Crack password
 
+```
+john --format=<format> hashes.txt
+```
+
+```
+john --show hashes.txt
+```
+
+```
+john --session=new_session --wordlist=/path/to/wordlist.txt hashes.txt
+```
+
+```
+john --wordlist=rockyou.txt --format=nt hashes.txt
+```
+
+
+
 ## Test đăng nhập
 
 ## Thăng 
