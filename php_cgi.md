@@ -53,6 +53,17 @@ SHOW TABLES;
 SELECT * FROM users;
 ```
 
+```
+USE mysql;
+SELECT user, host, password FROM user;
+```
+
+```
+USE owasp10;
+SHOW TABLES;
+SELECT * FROM accounts;
+```
+
 
 ```
 exit
