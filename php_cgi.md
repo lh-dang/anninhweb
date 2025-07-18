@@ -147,6 +147,30 @@ rm index.php
 
 
 # 🛡️ 4. Đề xuất khắc phục
+## Xóa CGI
+```
+find / -name "php-cgi" 2>/dev/null
+```
+
+```
+sudo rm -f /usr/bin/php-cgi
+```
+
+```
+sudo rm /etc/alternatives/php-cgi
+```
+
+```
+sudo rm -f /usr/lib/cgi-bin/php5
+sudo rm -f /usr/lib/cgi-bin/php
+```
+
+```
+sudo /etc/init.d/apache2 restart
+```
+
+
+
 
 ## Lọc Tham Số Nguy Hiểm
 > `-d` `-n` `-s` ...
