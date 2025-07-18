@@ -168,8 +168,15 @@ sudo rm -f /usr/lib/cgi-bin/php
 ```
 sudo /etc/init.d/apache2 restart
 ```
+### Cài mod_php
+```
+sudo apt-get update
+sudo apt-get install libapache2-mod-php5
+```
 
-
+```
+sudo /etc/init.d/apache2 restart
+```
 
 
 ## Lọc Tham Số Nguy Hiểm
